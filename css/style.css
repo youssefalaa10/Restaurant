@@ -1,0 +1,232 @@
+/* Reboto font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Colors Uses: #s0906- #252A34 -#FF2E63- BEAEAEA  */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* main style */
+html.body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+}
+/* utility class */
+.container {
+  max-width: 80%;
+  margin: auto;
+  padding: 0.5rem;
+}
+.bg-dark {
+  background-color: #252a34;
+  color: #fff;
+}
+.bg-light {
+  background-color: #eaeaea;
+  color: #252a34;
+}
+.bg-primary {
+  background-color: #252a34;
+  color: #fff;
+}
+.text-primary {
+  color: #ff2e63;
+}
+.text-center {
+  text-align: center; /*to center h1 words*/
+}
+.l-heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.m-heading {
+  font-size: 2rem;
+}
+.lead {
+  font-size: 1.6rem;
+}
+.py-1 {
+  padding: 1.5rem 0; /* space words from top &bottom= 1.5 r-l= 0*/
+}
+.p-1 {
+  padding: 1.5rem;
+}
+.btn {
+  background-color: #08d9d6;
+  color: #fff;
+  padding: 0.2rem 1.5rem;
+  border-radius: 5px;
+}
+.btn-dark {
+  background-color: darkorchid;
+  color: #fff;
+}
+.btn:hover {
+  background-color: #ff2e63;
+}
+
+.box-shadow {
+  box-shadow: 0 0 2px #252a34;
+}
+/* navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between; /* create space between logo & nav bar*/
+  align-items: center; /* center logo with menu*/
+  padding: 1rem; /* ==16px */
+  position: sticky; /*to fix logo in top */
+  top: 0;
+  z-index: 1; /*to still upper when scoring*/
+}
+#navbar.logo img {
+  width: 80px;
+}
+#navbar ul {
+  list-style: none;
+  display: flex; /* display item nav horizontal*/
+}
+#navbar ul li a {
+  color: #fff;
+  padding: 1rem;
+}
+#navbar ul li a:hover {
+  background-color: #08d9d6; /* give item blue color when touch it*/
+  border-radius: 5px;
+}
+
+/* section: showcase */
+#showcase {
+  background: #252a34
+    url(../img/Daler\ -\ Restaurant\ Interior\ Bringing\ Festivity\ vibes\ _\ Design\ Ethics\ Architecture\ Studio\ -\ The\ Architects\ Diary.png)
+    no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+#showcase .showcase-content {
+  /*to make words in center */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 1rem;
+  /* overlay */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* section about */
+#about .about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+}
+
+#about .about-content div,
+#about .about-content img {
+  flex: 1; /*make img take 50% from width*/
+}
+
+#about .about-content img {
+  width: 50%;
+  margin-left: 1.5rem;
+  border: 5px solid #fff;
+}
+
+/* section CTA */
+#cta {
+  background: url(../img/Uit\ eten\ Antwerpen\ leuke\ eettentjes\ en\ restaurants\ in\ Antwerpen.jpg)
+    no-repeat center bottom/cover;
+  color: #fff;
+}
+#cta.cta-content {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+#cta .cta-content.container p {
+  margin-bottom: 1.5rem;
+}
+
+/* section Menu */
+#Menu {
+  color: #252a34;
+}
+#Menu .boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Meanu .boxes-box {
+  flex: 1;
+  padding: 1rem;
+}
+#Menu .boxes-box img {
+  width: 70px;
+  background-color: #08d9d6;
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+/* samples */
+#samples .samples-boxes {
+  display: flex;
+}
+#samples .samples-boxes .samples-box {
+  background-color: #fff;
+  flex: 1;
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+#samples .samples-boxes .samples-box img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#samples .samples-boxes .samples-box ul {
+  display: flex;
+  list-style: none;
+}
+
+#samples .samples-boxes .samples-box ul li a {
+  color: #252a34;
+  margin-right: 10px;
+}
+#samples .samples-boxes .samples-box ul li a:hover {
+  color: #ff2e63;
+}
+
+/* contact */
+#contact {
+  display: flex;
+}
+#contact .contact,
+#contact .map {
+  flex: 1;
+}
+#contact .contact input,
+#contact .contact textarea {
+  width: 100%; /*100 from his div*/
+  padding: 0.75rem;
+  border: none;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+#contact .contact .form-group {
+  display: flex;
+}
+#contact .contact .form-group input[type="text"] {
+  margin-right: 0.75rem;
+}
